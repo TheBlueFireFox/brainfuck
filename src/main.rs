@@ -7,8 +7,7 @@ const PROGRAM_HALLO_WORLD: &str = include_str!("../input.txt");
 const PROGRAM_ADDING: &str = include_str!("../input1.txt");
 
 fn main() {
-    let int = Interpreter::new(PROGRAM_HALLO_WORLD.as_bytes());
-    for _ in int {}
+    for _ in Interpreter::new(PROGRAM_HALLO_WORLD.as_bytes()) {}
 }
 
 struct Interpreter<'program> {
